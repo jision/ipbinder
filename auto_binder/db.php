@@ -5,10 +5,10 @@ class Database {
     	public $hostname, $dbname, $username, $password, $conn;
 
 	    function __construct() {
-	        $this->host_name ="s4.voicetree.info";
+	        $this->host_name ="localhost";
 	        $this->dbname = "ipbind_server";
-	        $this->username ="vivek";
-	        $this->password = "banesgotham";
+	        $this->username ="user";
+	        $this->password = "password";
 	        $mem = false;
 	        //$this->memcache = $mem->connectMem();
 	        try {
