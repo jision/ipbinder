@@ -30,14 +30,9 @@ if (isset($_SESSION['userid'])) {
     if($serverlist != 0){
         foreach($serverlist as $server){
             
-            if($server['server'] == 'c1'){
-                
-                $url='http://apis.voicetree.info/auto_binder/addip.php';
-                                
-            }
-            else{
-                        $url='http://'.$server['server'].'.voicetree.info/auto_binder/addip.php';
-            }
+            
+            $url='http://'.'123.323.45.01/auto_binder/addip.php';// your server with access from web (preferably web root)
+            
             $fields = array(
                                 'ip' => urlencode($ip),
                                 'id' => urlencode($id),
